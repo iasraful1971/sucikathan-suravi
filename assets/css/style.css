@@ -524,6 +524,12 @@ body {
   background-position: right;
 }
 
+@media(max-width: 991px) {
+  .contact {
+    background-image: none;
+  }
+}
+
 .contact form .form-group input {
   border: none;
   outline: none;
@@ -546,6 +552,12 @@ body {
 
 .contact .balo {
   padding: 0 60px;
+}
+
+@media(max-width: 768px) {
+  .contact .balo {
+    padding: 0 10px;
+  }
 }
 
 .contact form .btn {
@@ -684,7 +696,7 @@ body {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #cda45e;
+  color: #ff5f61;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -713,7 +725,7 @@ body {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #cda45e;
+  background: #ff5f61;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -736,5 +748,96 @@ body {
 }
 
 #footer a {
+  text-decoration: none;
+}
+
+
+
+
+/* preloader and back to top */
+
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ff5;
+  border-top-color: #ff5f61;
+  border-bottom-color: cyan;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 40px;
+  bottom: 60px;
+  z-index: 995;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  color: #111;
+  transition: all 0.4s;
+  border: 1px solid #ff6f61;
+  text-decoration: none;
+  background: #fff;
+}
+
+.back-to-top i:hover {
+  background: cyan;
+  color: #ff5f61;
+}
+
+a {
   text-decoration: none;
 }
