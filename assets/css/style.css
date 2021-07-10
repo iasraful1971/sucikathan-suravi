@@ -349,6 +349,21 @@ body {
 
 /* The Qualities of products */
 
+
+
+@media(max-width:576px) {
+  .quality .four {
+    order: 2;
+  }
+
+  .quality .order-image {
+    order: 1;
+  }
+}
+
+
+
+
 .quality .one {
   background: url('../images/shape/5.png');
   background-repeat: no-repeat;
