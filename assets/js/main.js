@@ -1,9 +1,4 @@
-/**
- * Template Name: Restaurantly - v1.2.1
- * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
+
 !(function ($) {
   "use strict";
 
@@ -255,3 +250,8 @@ $('#sl2').slider();
 var RGBChange = function () {
   $('#RGB').css('background', 'rgb(' + r.getValue() + ',' + g.getValue() + ',' + b.getValue() + ')')
 };
+
+
+// disable copy
+
+
